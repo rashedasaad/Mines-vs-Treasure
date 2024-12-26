@@ -1,0 +1,53 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  width: 100vw; /* Changed from 'wh' to 'vw' */
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url('../images/background.jpg');
+  background-size: cover; /* Ensures the image covers the container */
+  background-repeat: no-repeat; /* Prevents repetition of the image */
+  background-position: center; /* Centers the image */
+}
+
+
+button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#gameBoard {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-gap: 5px;
+  margin-top: 20px;
+}
+
+/* Game-specific styles (game.css) */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+#backHome, #quitGame {
+  margin-top: 20px;
+  padding: 10px;
+}
